@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phind</title>
+
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <h1 class="Tool-heading"><img src="./phind.png"/></h1>
+    <p class="tool-intro-content">
+        Phind AI is an AI-powered search engine designed for developers to help with programming-related topics. It provides answers, code examples, and explanations to help users understand programming concepts more quickly.    </p>
+    <br />
+    <h2 class="sub-heading">Features</h2>
+    <ul>
+        <li class="features">It offers customizable search preferences.</li>
+        <li class="features">It generates descriptive answers, supports up to 6,000 characters per query.</li>
+        <li class="features">It uses GPT-4 and its own model to produce accurate responses.</li>
+    </ul>
+    <br />
+    <h2 class="sub-heading">Why Phind?</h2>
+    <p class="tool-intro-content">Phind AI aims to simplify the process of coding and learning programming by providing accurate and up-to-date information directly to the users. It's useful for developers, students, and tech enthusiasts to write, edit, debug code, and learn new technologies.</p>
+    <table class="comparison-table">
+        <thead>
+            <tr class="comparison-table-row">
+                <th class="tools"></th>
+                <th class="tools check">Phind</th>
+                <th class="tools">ChatGPT</th>
+                <th class="tools">Cody</th>
+                <th class="tools">Perplexity</th>
+                <th class="tools">Gemini</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Free Plan</th>
+                <td class="check"><i class="fa-solid fa-check"></i></td>
+                <td class="check"><i class="fa-solid fa-check"></i></td>
+                <td class="cross"><i class="fa-solid fa-xmark"></td>
+                <td class="check"><i class="fa-solid fa-check"></i></td>
+                <td class="check"><i class="fa-solid fa-check"></i></td>
+            </tr>
+            <tr>
+                <th>Context-Aware</th>
+                <td class="check"><i class="fa-solid fa-check"></i></td>
+                <td class="check"><i class="fa-solid fa-check"></i></td>
+                <td class="check"><i class="fa-solid fa-check"></i></td>
+                <td class="check"><i class="fa-solid fa-check"></i></td>
+                <td class="check"><i class="fa-solid fa-check"></i></td>
+            </tr>
+            <tr>
+                <th>Extension Support</th>
+                <td class="check"><i class="fa-solid fa-check"></i></td>
+                <td class="cross"><i class="fa-solid fa-xmark"></i></td>
+                <td class="check"><i class="fa-solid fa-check"></i></td>
+                <td class="cross"><i class="fa-solid fa-xmark"></td>
+                <td class="cross"><i class="fa-solid fa-xmark"></i></td>
+            </tr>
+            <tr>
+                <th>Browser Support</th>
+                <td class="check"><i class="fa-solid fa-check"></i></td>
+                <td class="check"><i class="fa-solid fa-check"></i></td>
+                <td class="check"><i class="fa-solid fa-check"></i></td>
+                <td class="check"><i class="fa-solid fa-check"></i></td>
+                <td class="check"><i class="fa-solid fa-check"></i></td>
+            </tr>
+            <tr>
+                <th>Auto-Complete</th>
+                <td class="check"><i class="fa-solid fa-check"></i></td>
+                <td class="cross"><i class="fa-solid fa-xmark"></i></td>
+                <td class="check"><i class="fa-solid fa-check"></i></td>
+                <td class="check"><i class="fa-solid fa-check"></i></td>
+                <td class="check"><i class="fa-solid fa-check"></i></td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <h2 class="sub-heading">How Phind?</h2>
+    <p>
+        Phind operates by understanding user requirements, generating relevant code snippets, and providing detailed explanations, ensuring a seamless and efficient coding experience.    </p>
+    <div class="demo">
+        <div>
+            <h3 class="sub-heading">Specify @files from your codebase</h3>
+            <img src="./@files.gif"/>
+        </div>
+        <div>
+            <h3 class="sub-heading">Add selection to chat (Cmd/Ctrl + Shift + I)</h3>
+            <img src="./chat.gif"/>
+        </div>
+        <div>
+            <h3 class="sub-heading">Write inline code (Cmd/Ctrl + Shift + M)</h3>
+            <img src="./inline-code.gif"/>
+        </div>
+        <div>
+            <h3 class="sub-heading">Fix underlined errors/warnings</h3>
+            <img src="./errors.gif"/>
+        </div>
+        <div>
+            <h3 class="sub-heading">Fix terminal errors (Cmd/Ctrl + Shift + L)</h3>
+            <img src="./fix-errors.gif"/>
+        </div>
+    </div>
+    <br />
+    <h2 class="sub-heading">Installation</h2>
+    <p>Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter.</p>
+    <p><code>ext install phind.phind</code></p>
+    <br />
+    <h2 class="sub-heading faq">FAQ</h2>
+    <ol>
+        <li>Is Phind AI free?
+            <p class="answer">Yes, Phind AI is a free tool that does not require an account to use.</p>
+        </li>
+        <li>What languages does Phind AI support?
+            <p class="answer">Phind AI supports a wide range of programming languages including JavaScript, React JS, Python, Java, C, CSS, HTML, C++, R, Ruby, and more.</p>
+        </li>
+        <li>Does Phind AI provide updated information?
+            <p class="answer">Phind AI sources responses from trusted websites in real-time, ensuring up-to-date information.</p>
+        </li>
+    </ol>
+    <br />
+    <a class="back-button" href="../Introduction/Introduction.html">Back to Introduction</a>
+</body>
+</html>

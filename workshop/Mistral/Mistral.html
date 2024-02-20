@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mistral</title>
+
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="Tool-heading"><img src="./mistral.svg" /></h1>
+        Mistral AI is focused on developing models that are efficient and accessible. Mistral AI's models, such as the Mistral 7B, are trained on a variety of different datasets, including text, code and images. This makes them more versatile and adaptable than other models, often trained on a single data type.    </p>
+    <br />
+    <h2 class="sub-heading">LLM</h2>
+    <p class="tool-intro-content">A Large Language Model (LLM) is an artificial intelligence algorithm trained on massive amounts of data that is able to generate coherent text and perform various natural language processing tasks. Mistral is a large language model that has demonstrated strong performance in various natural language processing tasks.</p>
+    <br />
+    <h2 class="sub-heading buzzwords">Buzzwords</h2>
+    <ol>
+        <li><span>Fine Tuning</span>
+            <p class="tool-intro-content">Mistral can be fine-tuned for specific applications, such as answering fact-based questions on complex documents with a focus on reducing hallucinations.</p>
+        </li>
+        <li><span>Hallucination</span>
+            <p class="tool-intro-content">The fine-tuning process aims to minimize hallucinations, which are incorrect or nonsensical outputs produced by the model.</p>
+        </li>
+        <li><span>RAG</span>
+            <p class="tool-intro-content">Mistral is part of the dRAGon model series, which are trained with RAG-instruct.</p>
+        </li>
+        <li><span>Quantization</span>
+            <p class="tool-intro-content">Quantization refers to a set of techniques that enable running models on resource-constrained platforms. 
+                Higher quantization 'bit counts' (4 bits or more) generally preserve more quality, whereas lower levels compress the model further, which can lead to a significant loss in quality.Choose a quantization level that aligns with your hardware's capabilities and satisfies the performance needs of your task. If you're unsure which option to select, consider experimenting with a few different ones and perform your own evaluation.
+                <table class="comparison-table">
+                    <thead>
+                        <tr class="comparison-table-row">
+                            <th class="tools">Quant method</th>
+                            <th class="tools">Bits</th>
+                            <th class="tools">Use case</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Q2_K</td>
+                            <td>2</td>
+                            <td>smallest, significant quality loss - not
+                                recommended for most purposes</td>
+                        </tr>
+                        <tr>
+                            <td>Q3_K_S</td>
+                            <td>3</td>
+                            <td>very small, high quality loss
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Q3_K_M</td>
+                            <td>3</td>
+                            <td>very small, high quality loss
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Q3_K_L</td>
+                            <td>3</td>
+                            <td>small, substantial quality loss
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Q4_0</td>
+                            <td>4</td>
+                            <td>legacy; small, very high quality loss-
+                                prefer using Q3_K_M</td>
+                        </tr>
+                        <tr>
+                            <td>Q4_K_S</td>
+                            <td>4</td>
+                            <td>small, greater quality loss
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Q4_K_M</td>
+                            <td>4</td>
+                            <td>medium, balanced quality -
+                                recommended</td>
+                        </tr>
+                        <tr>
+                            <td>Q5_0</td>
+                            <td>5</td>
+                            <td>legacy; medium, balanced quality -
+                                prefer using Q4_K_M</td>
+                        </tr>
+                        <tr>
+                            <td>Q5_K_S</td>
+                            <td>5</td>
+                            <td>large, low quality loss-recommended
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Q5_K_M</td>
+                            <td>5</td>
+                            <td>large, very low quality loss-
+                                recommended</td>
+                        </tr>
+                        <tr>
+                            <td>Q6_K</td>
+                            <td>6</td>
+                            <td>very large, extremely low quality loss
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Q8_0</td>
+                            <td>8</td>
+                            <td>very large, extremely low quality loss-
+                                not recommended</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </p>
+        </li>
+        <li><span>GGUF</span>
+            <p class="tool-intro-content">Mistral uses the GGUF format for its model files, which are available in various quantization levels and sizes.</p>
+        </li>
+        <li><span>Type of Models</span>
+            <p class="tool-intro-content">Mistral is a generative text model that has been fine-tuned using various conversation datasets.</p>
+        </li>
+        <li><span>Parameters</span>
+            <p class="tool-intro-content">Mistral has a large number of parameters, which contributes to its ability to perform well on a wide range of NLP tasks.</p>
+        </li>
+    </ol>
+    <br />
+    <div class="all-features">
+        <h2 class="sub-heading feature-heading">Features</h2>
+        <div class="feature-set">
+            <li class="features"><span>Advanced Fine-Tuning Capabilities</span><p>Mistral offers sophisticated fine-tuning options that allow for precise control over the model's adaptation to specific tasks or domains.</p></li>
+            <li class="features"><span>Robustness to Hallucination</span><p>It has mechanisms to mitigate hallucination, ensuring that the generated text is grounded in the input data and maintains high fidelity.</p></li>
+            <li class="features"><span>Efficient Retrieval-Augmented Generation</span><p>Mistral's RAG system enables it to retrieve and incorporate relevant information efficiently, resulting in more accurate and contextually rich responses.</p></li>
+            <li class="features"><span>Optimized Quantization</span><p>The model's quantization process is designed to balance efficiency and performance, allowing for faster inference without a significant drop in quality.</p></li>
+            <li class="features"><span>Dynamic Gradient Clipping</span><p>Mistral's GGUF parameter allows for dynamic adjustment of gradient clipping during training, which can enhance learning stability and convergence.</p></li>
+            <li class="features"><span>Versatile Model Architecture</span><p>It supports a variety of model architectures, including transformers and autoregressive models, providing flexibility in choosing the best approach for different tasks.</p></li>
+            <li class="features"><span>Scalable and Customizable</span><p>Mistral is designed to scale with the needs of the user, with customization options for model size, training data, and hyperparameters.</p></li>
+            <li class="features"><span>Continuous Improvement</span><p>The model is regularly updated with new features and improvements, ensuring that it stays at the forefront of language model technology.</p></li>
+            <li class="features"><span>Integration with External Databases</span><p>Mistral can be integrated with external databases to pull in real-world data, enhancing the model's ability to generate relevant and accurate information.</p></li>
+            <li class="features"><span>User-Friendly Interface</span><p>Mistral provides an intuitive interface for users to interact with the model, making it accessible even to those without a deep technical background.</p></li>
+        </div>
+    </div>
+    <br />
+    <br />
+    <a class="back-button" href="../Introduction/Introduction.html">Back to Introduction</a>
+</body>
+</html>

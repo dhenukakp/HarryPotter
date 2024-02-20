@@ -1,0 +1,160 @@
+:root {
+    --main-text-color: #FFFFFF;
+    --letter-spacing: 0.07rem;
+    --line-height: 2rem;
+    --heading-font-family: "Bebas Neue", sans-serif;
+    --content-font-family: sans-serif;
+}
+
+body {
+    margin: 5rem;
+    font-family: var(--content-font-family);
+    color: var(--main-text-color);
+    letter-spacing: var(--letter-spacing);
+    line-height: var(--line-height);
+    background-image: url(./decorative-background-with-smoke.jpg);
+}
+
+.Tool-heading {
+    font-family: var(--heading-font-family);
+    letter-spacing: 0.15rem;
+    font-size: 6rem;
+    display: grid;
+    width: fit-content;
+    grid-template-columns: 1fr auto;
+    justify-content: center;
+}
+
+img {
+    height: 6rem;
+}
+
+.tool-intro-content {
+    width: 60rem;
+    font-weight: normal;
+    font-family: var(--content-font-family);
+    letter-spacing: normal;
+}
+
+.sub-heading {
+    font-family: var(--heading-font-family);
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    width: fit-content;
+}
+
+.sub-heading:hover {
+    color: orangered;
+}
+
+li {
+    padding: 10px;
+    font-weight: bold;
+    font-family: var(--heading-font-family);
+    letter-spacing: 0.17rem;
+    font-size: 1.5rem;
+}
+
+span {
+    font-family: "Oswald", sans-serif;
+}
+
+li p {
+    font-size: 1rem;
+}
+
+.features {
+    font-weight: normal;
+    font-family: var(--content-font-family);
+    letter-spacing: 0.07rem;
+    padding: 10%;
+    padding-bottom: 0.2rem;
+    padding-top: 0.5rem;
+    line-height: 2rem;
+}
+
+.comparison-table {
+    text-align: center;
+}
+
+th, td {
+    padding: 10px;
+}
+
+td {
+    font-weight: normal;
+    font-family: var(--content-font-family);
+    font-size: 0.9rem;
+    letter-spacing: normal;
+}
+
+.all-features {
+    background-color: #292e2f;
+    padding: 10px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-button {
+    border-radius: 50px;
+    border: none;
+    background-color: orangered;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.07rem;
+}
+
+.feature-set {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-set li {
+    font-size: 1rem;
+    list-style: none;
+}
+
+.back-button:hover {
+    opacity: 0.8;
+}
+
+.comparison-table {
+    text-align: center;
+}
+
+th, td {
+    padding: 10px;
+}
+
+table {
+    font-size: 1.2rem;
+    border: 1px solid gray;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.feature-set span {
+    font-family: var(--content-font-family);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.features p {
+    padding-top: 0.5rem;
+    margin-top: 0;
+}
+
+.feature-heading {
+    text-align: center;
+    padding-bottom: 1.5rem;
+}

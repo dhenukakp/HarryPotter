@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/labstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Ai Tools Workshop</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-home nav-link nav-link-ltr">
+            <a href="./landingpage.html"><li>Home</li></a>
+            
+        </div>
+        <div class="nav-links">
+            <ul>
+                <a href="../Introduction/Introduction.html" target="_blank"><li class="nav-link nav-link-ltr">Introduction</li></a>
+                <a href="../Phind/Phind.html" target="_blank">                <li class=" nav-link nav-link-ltr">
+
+                    <img class="tool-img" src="./assets/phind.png">
+                </li></a>
+                <a href="../Mistral/Mistral.html" target="_blank">                <li class=" nav-link nav-link-ltr">
+                    <img class="tool-img" src="./assets/mistral.svg">
+                </li></a>
+            </ul>
+        </div>
+            
+    </nav>
+    <section class="main-section">
+       
+        <div class="menu">
+          
+                <div class="menu__item active-link" onclick="opentab('card1')">
+                    <button class="menu__btn red" data-number=1 >1</button>
+                    <p>Task</p>
+                </div>
+      
+            
+          <div class="menu__item" onclick="opentab('card2')" >
+                <button class="menu__btn" data-number=2 >2</button>
+                <p>Task</p>
+            </div>
+            
+            <div class="menu__item" onclick="opentab('card3')" >
+                <button class="menu__btn" data-number=3>3</button>
+                <p>Task</p>
+            </div>
+            <div class="menu__item" onclick="opentab('card4')" >
+                <button class="menu__btn" data-number=4>4</button>
+                <p>Task</p>
+            </div>
+            <div class="menu__item" onclick="opentab('card5')" >
+                <button class="menu__btn" data-number=5>5</button>
+                <p>Task</p>
+            </div>
+     
+        </div>
+        <div class="content-div">
+            <div id="card1" class="content-card active">
+                <div class="language-option-div">
+                    <div class="btn-div">
+                        <button class="language-btn">Python </button>
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                            </span>
+                    </div>
+              
+
+                        <div class="language-options">
+                            <p>Java</p>
+                            <p>Python</p>
+                            <p>Php</p>
+                            <p>Javascript</p>
+                        </div>
+                </div>
+            <h1 class="card-title">Task 1. Design/Create a New Magical Creature</h1>    
+            <p>Imagine you're tasked with creating an API endpoint to add a new magical creature to a database. Your goal is to design an intuitive interface that allows users to effortlessly create enchanting beings. Your API should expect a JSON request body containing the name, species, and description of the creature. Additionally, you'll implement this endpoint using <span class="language">Python</span> to ensure smooth integration. Furthermore, ensure connectivity to a PostgreSQL database hosted on a Docker server, ensuring data security and reliability.</p>
+
+            </div>
+            <div id="card2"  class="content-card">
+                <p> 
+                </p>
+                <div class="language-option-div">
+                    <div class="btn-div">
+                        <button class="language-btn">Python </button>
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                            </span>
+                    </div>
+
+                        <div class="language-options">
+                            <p>Java</p>
+                            <p>Python</p>
+                            <p>Php</p>
+                            <p>Javascript</p>
+                        </div>
+                </div>
+                <h1 class="card-title">Task 2. Read Information About a Magical Creature</h1>  
+                <p>Your task is to devise an API endpoint that allows you to retrieve detailed information about a particular magical creature from the database. This endpoint should expect a unique identifier, {creature_id}, as part of the URL path to identify the creature of interest. Implement this endpoint using <span class="language">Python</span> to ensure efficient data retrieval. Additionally, ensure seamless connectivity to a PostgreSQL database hosted on a Docker server to provide reliable access to creature information.</p>  
+               
+            </div>
+            <div id="card3" class="content-card ">
+                  <p></p>
+                  <div class="language-option-div">
+                    <div class="btn-div">
+                        <button class="language-btn">Python </button>
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                            </span>
+                    </div>
+
+                        <div class="language-options">
+                            <p>Java</p>
+                            <p>Python</p>
+                            <p>Php</p>
+                            <p>Javascript</p>
+                        </div>
+                </div>
+                <h1 class="card-title">Task 3. Update a Magical Creature's Information</h1>  
+                <p>
+                    Your mission is to construct an API endpoint that empowers you to update the description of a specific magical creature stored in the database. This endpoint should expect a JSON body containing the new description, allowing you to modify the creature's information. Implement this endpoint using <span class="language">Python</span> to ensure smooth integration and efficient data handling. Moreover, ensure seamless connectivity with a PostgreSQL database hosted on a Docker server to securely persist the updated information.
+                </p>  
+              
+            </div>
+            <div id="card4" class="content-card ">
+                 <p></p>
+                 <div class="language-option-div">
+                    <div class="btn-div">
+                        <button class="language-btn">Python </button>
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                            </span>
+                    </div>
+
+                        <div class="language-options">
+                            <p>Java</p>
+                            <p>Python</p>
+                            <p>Php</p>
+                            <p>Javascript</p>
+                        </div>
+                </div>
+                <h1 class="card-title">Task 4. Delete a Magical Creature from the Database</h1> 
+                
+                <p>
+                    Your challenge is to engineer an API endpoint that allows you to delete a specific magical creature from the database based on its identifier. This endpoint should expect the unique identifier, {creature_id}, as part of the URL path to pinpoint the creature for deletion. Implement this endpoint using <span class="language">Python</span> to ensure secure and efficient removal of the creature. Additionally, ensure seamless connectivity with a PostgreSQL database hosted on a Docker server to facilitate the deletion process with confidence.
+                </p>
+              
+            </div>
+            <div id="card5" class="content-card ">
+             <p></p>
+             <div class="language-option-div">
+                <div class="btn-div">
+                    <button class="language-btn">Python </button>
+                    <span class="material-symbols-outlined">
+                        arrow_drop_down
+                        </span>
+                </div>
+
+                    <div class="language-options">
+                        <p>Java</p>
+                        <p>Python</p>
+                        <p>Php</p>
+                        <p>Javascript</p>
+                    </div>
+            </div>
+            <h1 class="card-title">Task 5. List All Magical Creatures</h1>    
+            <p>
+                Your task is to develop an API endpoint that offers you a comprehensive list of all magical creatures currently residing in the database. Simply send a GET request to this endpoint to retrieve the enchanting beings. Implement this endpoint using <span class="language">Python</span> to ensure seamless integration and efficient data retrieval. Additionally, ensure seamless connectivity with a PostgreSQL database hosted on a Docker server to fetch and display all magical creatures with ease.
+            </p>
+         
+            </div>
+
+        </div>
+    </section>
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>
