@@ -1,0 +1,225 @@
+html, body {
+  font-family: sans-serif;
+  color: white;
+  font-weight: 500;
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: 100%;
+  /* overflow-x: hidden; */
+  background-color: #3B494B;
+  background-image: url('./Images/decorative-background-with-smoke.jpg');
+  line-height: 24px;
+}
+
+
+h1 {
+    font-size: 3.5rem;
+    color: #8b3dff;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: .2rem;
+}
+
+h2 {
+    color: #8b3dff;
+    font-size: 2rem;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: .1rem;
+    padding-left: 24rem;
+}
+
+h3 {
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: .1rem;
+    color: aliceblue;
+    /* padding-left: 4.5rem; */
+    background-color: #3f5efb1c;;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    border-radius: .5rem;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+
+}
+
+
+
+
+
+
+
+#ai-introduction {
+    margin: 0rem 7rem;
+}
+
+
+ul {
+    list-style: none;
+    background-color: #8b3dff;
+    padding: 0.5rem 0.7rem;
+    border-radius: .4rem;
+    width: fit-content;
+    padding: .5rem;
+    
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+ul:hover {
+    background-color: #9b5bfa;
+}
+
+ul:hover .fa-solid.fa-angles-right {
+    transform: rotate(90deg);
+    padding: .2rem;
+}
+
+
+i {
+    color: white;
+    padding-left: .6rem;
+}
+
+#intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #intro-details {
+    padding-top: 12.5rem;
+
+} */
+
+#intro-image img {
+    height: 47rem;
+    width: 42rem;
+    padding-left: 4rem;
+}
+
+
+
+#trends-capabilities {
+    background-color: #3f5efb1c;
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+#trends-capabilities p {
+    padding: 0rem 3rem;
+    
+}
+
+/* #trends-capabilities h2 {
+    color: #ac84cc;
+    font-size: 2rem;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: .1rem;
+    padding-left: 24rem;
+} */
+
+#trends-capabilities h2 {
+    color: #ac84cc;
+    font-size: 2rem;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: .1rem;
+    /*! padding-left: 24rem; */
+    padding-left: 40%;
+}
+
+
+#capabilities {
+    padding-top: 1rem;
+}
+
+
+
+#ai-title h2 {
+    font-size: 2.5rem;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: .1rem;
+    padding: 0;
+    padding-top: 4rem;
+}
+
+#ai-tools-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+
+
+#ai-tools-image img {
+    height: 25rem;
+    width: 19rem;
+    position: relative;
+    animation: myfirst 5s linear 2s infinite alternate;
+}
+
+@keyframes myfirst {
+    0%   { top:10px;}
+    50%  { top:50px;}
+    100% { top:10px;}
+}
+
+.ai-tools-para-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #aab5e91c; 
+    padding: 1.6rem;
+    border-radius: 1.2rem;
+    width: 21rem;
+    height: 17rem;
+}
+
+/* p {
+    border: 1px solid red;
+} */
+
+.ai-tools-para-ul ul{
+    font-weight: 600;
+}
+
+#phind, #mistral {
+    padding: 1rem;  
+    padding-top: 3rem;
+    padding-left: 0;
+}
+
+#phind h3, #mistral h3{
+    text-align: center;
+}
+
+
+#phind img, #mistral img {
+    height: 3rem;
+    width: auto;
+    object-fit: contain;
+    
+}
+
+.fa-caret-right {
+    padding-left: .3rem;
+}
+
+
+#link-to-codelab {
+    /* padding-left: 39rem; */
+    /* padding-left: 3rem; */
+    padding-left: 82.1%;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+
+    
+   
