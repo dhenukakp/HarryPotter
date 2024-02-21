@@ -21,116 +21,6 @@
     <h2 class="sub-heading">LLM</h2>
     <p class="tool-intro-content">A Large Language Model (LLM) is an artificial intelligence algorithm trained on massive amounts of data that is able to generate coherent text and perform various natural language processing tasks. Mistral is a large language model that has demonstrated strong performance in various natural language processing tasks.</p>
     <br />
-    <h2 class="sub-heading buzzwords">Buzzwords</h2>
-    <ol>
-        <li><span>Fine Tuning</span>
-            <p class="tool-intro-content">Mistral can be fine-tuned for specific applications, such as answering fact-based questions on complex documents with a focus on reducing hallucinations.</p>
-        </li>
-        <li><span>Hallucination</span>
-            <p class="tool-intro-content">The fine-tuning process aims to minimize hallucinations, which are incorrect or nonsensical outputs produced by the model.</p>
-        </li>
-        <li><span>RAG</span>
-            <p class="tool-intro-content">Mistral is part of the dRAGon model series, which are trained with RAG-instruct.</p>
-        </li>
-        <li><span>Quantization</span>
-            <p class="tool-intro-content">Quantization refers to a set of techniques that enable running models on resource-constrained platforms. 
-                Higher quantization 'bit counts' (4 bits or more) generally preserve more quality, whereas lower levels compress the model further, which can lead to a significant loss in quality.Choose a quantization level that aligns with your hardware's capabilities and satisfies the performance needs of your task. If you're unsure which option to select, consider experimenting with a few different ones and perform your own evaluation.
-                <table class="comparison-table">
-                    <thead>
-                        <tr class="comparison-table-row">
-                            <th class="tools">Quant method</th>
-                            <th class="tools">Bits</th>
-                            <th class="tools">Use case</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Q2_K</td>
-                            <td>2</td>
-                            <td>smallest, significant quality loss - not
-                                recommended for most purposes</td>
-                        </tr>
-                        <tr>
-                            <td>Q3_K_S</td>
-                            <td>3</td>
-                            <td>very small, high quality loss
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Q3_K_M</td>
-                            <td>3</td>
-                            <td>very small, high quality loss
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Q3_K_L</td>
-                            <td>3</td>
-                            <td>small, substantial quality loss
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Q4_0</td>
-                            <td>4</td>
-                            <td>legacy; small, very high quality loss-
-                                prefer using Q3_K_M</td>
-                        </tr>
-                        <tr>
-                            <td>Q4_K_S</td>
-                            <td>4</td>
-                            <td>small, greater quality loss
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Q4_K_M</td>
-                            <td>4</td>
-                            <td>medium, balanced quality -
-                                recommended</td>
-                        </tr>
-                        <tr>
-                            <td>Q5_0</td>
-                            <td>5</td>
-                            <td>legacy; medium, balanced quality -
-                                prefer using Q4_K_M</td>
-                        </tr>
-                        <tr>
-                            <td>Q5_K_S</td>
-                            <td>5</td>
-                            <td>large, low quality loss-recommended
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Q5_K_M</td>
-                            <td>5</td>
-                            <td>large, very low quality loss-
-                                recommended</td>
-                        </tr>
-                        <tr>
-                            <td>Q6_K</td>
-                            <td>6</td>
-                            <td>very large, extremely low quality loss
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Q8_0</td>
-                            <td>8</td>
-                            <td>very large, extremely low quality loss-
-                                not recommended</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </p>
-        </li>
-        <li><span>GGUF</span>
-            <p class="tool-intro-content">Mistral uses the GGUF format for its model files, which are available in various quantization levels and sizes.</p>
-        </li>
-        <li><span>Type of Models</span>
-            <p class="tool-intro-content">Mistral is a generative text model that has been fine-tuned using various conversation datasets.</p>
-        </li>
-        <li><span>Parameters</span>
-            <p class="tool-intro-content">Mistral has a large number of parameters, which contributes to its ability to perform well on a wide range of NLP tasks.</p>
-        </li>
-    </ol>
-    <br />
     <div class="all-features">
         <h2 class="sub-heading feature-heading">Features</h2>
         <div class="feature-set">
@@ -148,6 +38,8 @@
     </div>
     <br />
     <br />
+    <p class="mistral-link">Learn more about <a class="read-more" href="https://mistral.ai/">Mistral</a>
+    </p>
     <a class="back-button" href="../Introduction/Introduction.html">Back to Introduction</a>
 </body>
 </html>

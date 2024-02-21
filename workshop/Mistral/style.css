@@ -4,6 +4,7 @@
     --line-height: 2rem;
     --heading-font-family: "Bebas Neue", sans-serif;
     --content-font-family: sans-serif;
+    --heading-color: #8b3dff;
 }
 
 body {
@@ -41,10 +42,7 @@ img {
     letter-spacing: 0.2rem;
     font-size: 2rem;
     width: fit-content;
-}
-
-.sub-heading:hover {
-    color: orangered;
+    color: var(--heading-color)
 }
 
 li {
@@ -99,18 +97,6 @@ td {
     align-items: center;
 }
 
-.back-button {
-    border-radius: 50px;
-    border: none;
-    background-color: orangered;
-    height: fit-content;
-    width: fit-content;
-    padding: 10px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    letter-spacing: 0.07rem;
-}
-
 .feature-set {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -124,8 +110,23 @@ td {
     list-style: none;
 }
 
+.back-button {
+    border-radius: 50px;
+    border: none;
+    background-color: #5d13df;
+    height: fit-content;
+    width: 2rem;
+    text-decoration: none;
+    color: white;
+    letter-spacing: var(--letter-spacing);
+    font-weight: 600;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 .back-button:hover {
-    opacity: 0.8;
+    background-color: #5012ad;
 }
 
 .comparison-table {
@@ -157,4 +158,19 @@ table {
 .feature-heading {
     text-align: center;
     padding-bottom: 1.5rem;
+}
+
+.read-more {
+    color: white;
+}
+
+.mistral-link {
+    background-color: #3c3f40;
+    width: fit-content;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    font-weight: 600;
 }

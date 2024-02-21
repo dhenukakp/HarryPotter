@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Ai Tools Workshop</title>
+    <title>AI Tools Workshop</title>
 </head>
 <body>
     <nav class="nav-bar">
@@ -33,38 +33,47 @@
     <section class="main-section">
        
         <div class="menu">
-          
-                <div class="menu__item active-link" onclick="opentab('card1')">
-                    <button class="menu__btn red" data-number=1 >1</button>
-                    <p>Task</p>
+
+            <div data-menu-item-id=0 class="menu__item active-link" onclick="  displayCard(0);">
+                <button class="menu__btn purple" data-number=0 >0</button>
+                <p>Introduction</p>
+            </div>
+
+                <div data-menu-item-id=1 class="menu__item" onclick=" displayCard(1)">
+                    <button class="menu__btn" data-number=1 >1</button>
+                    <p>Adding Enchantment to the Database</p>
                 </div>
       
             
-          <div class="menu__item" onclick="opentab('card2')" >
+          <div data-menu-item-id=2 class="menu__item" onclick="displayCard(2)" >
                 <button class="menu__btn" data-number=2 >2</button>
-                <p>Task</p>
+                <p>Unveiling Magical Creatures</p>
             </div>
             
-            <div class="menu__item" onclick="opentab('card3')" >
+            <div data-menu-item-id=3 class="menu__item" onclick="  displayCard(3)" >
                 <button class="menu__btn" data-number=3>3</button>
-                <p>Task</p>
+                <p>Updating Enchantments</p>
             </div>
-            <div class="menu__item" onclick="opentab('card4')" >
+            <div class="menu__item" onclick=" displayCard(4)" >
                 <button class="menu__btn" data-number=4>4</button>
-                <p>Task</p>
+                <p>Banishing Dark Creatures</p>
             </div>
-            <div class="menu__item" onclick="opentab('card5')" >
+            <div class="menu__item" onclick="  displayCard(5)" >
                 <button class="menu__btn" data-number=5>5</button>
-                <p>Task</p>
+                <p>Cataloging Magical Beings</p>
+            </div>
+            <div class="menu__item" onclick="  displayCard(6)" >
+                <button class="menu__btn" data-number=6>6</button>
+                <p>Seeking Ancient Spells</p>
             </div>
      
         </div>
         <div class="content-div">
-            <div id="card1" class="content-card active">
+            <div id="card0" class="content-card active" data-card-id=0>
                 <div class="language-option-div">
                     <div class="btn-div">
-                        <button class="language-btn">Python </button>
-                        <span class="material-symbols-outlined">
+                        <button class="language-btn">PHP</button>
+                        <span class="arrow-down material-symbols-outlined">
                             arrow_drop_down
                             </span>
                     </div>
@@ -73,21 +82,74 @@
                         <div class="language-options">
                             <p>Java</p>
                             <p>Python</p>
-                            <p>Php</p>
-                            <p>Javascript</p>
+                            <p>PHP</p>
+                            <p>JavaScript</p>
                         </div>
                 </div>
-            <h1 class="card-title">Task 1. Design/Create a New Magical Creature</h1>    
-            <p>Imagine you're tasked with creating an API endpoint to add a new magical creature to a database. Your goal is to design an intuitive interface that allows users to effortlessly create enchanting beings. Your API should expect a JSON request body containing the name, species, and description of the creature. Additionally, you'll implement this endpoint using <span class="language">Python</span> to ensure smooth integration. Furthermore, ensure connectivity to a PostgreSQL database hosted on a Docker server, ensuring data security and reliability.</p>
-
+            <h1 class="card-title">0. Introduction</h1>    
+           
             </div>
-            <div id="card2"  class="content-card">
-                <p> 
-                </p>
+
+
+            
+            <div id="card1" class="content-card" data-card-id=1>
                 <div class="language-option-div">
                     <div class="btn-div">
-                        <button class="language-btn">Python </button>
-                        <span class="material-symbols-outlined">
+                        <button class="language-btn">PHP</button>
+                        <span class="arrow-down material-symbols-outlined">
+                            arrow_drop_down
+                            </span>
+                    </div>
+              
+
+                        <div class="language-options">
+                            <p>Java</p>
+                            <p>Python</p>
+                            <p>PHP</p>
+                            <p>JavaScript</p>
+                        </div>
+                </div>
+            <h1 class="card-title">1. Adding Enchantment to the Database</h1>    
+            <p class="card-content-story">In the heart of the Hogwarts library, Hermione Granger, armed with her magical prowess, took on the task of designing the first API endpoint. With the flick of her wand, she crafted a spellbinding interface that allowed users to seamlessly add new magical creatures to the database. The JSON request body containing the name, species, and description of the creature was the key ingredient.</p>
+            <div class="card-content-prompt">
+                <!-- <p class="prompt">PROMPT:</p> -->
+                <div class="prompt-copy-div">
+                    <p class="prompt">Prompt</p>
+                    <span data-copy-icon-id=1  onclick="copy(1); changeText(1);" class="copy-icon material-symbols-outlined">
+                        content_copy
+                    </span>
+                    <span class="copied-text hidden">copied!</span>
+                </div>
+                <p class="card-content-prompt-text" data-copy-id=1 data-prompt-id="1">Imagine you're tasked with building an enchanted ecosystem for a magical database at Hogwarts School of Witchcraft and Wizardry. Your mission is to construct a set of magical APIs that will allow users to interact with the database storing information about various magical creatures. The database is hosted on a secure Docker server, ensuring data security and reliability.
+
+                    Before we delve into creating the APIs, please ensure that you have access to the database credentials. These credentials are typically stored in a .env file within my project folder. Here are the credentials you'll need:
+                    
+                    Host:
+                    Port:
+                    DatabaseName:
+                    Username:
+                    Password:
+                    
+                    The table name is "creature".
+                    
+                    Please ensure to provide a cURL request with  http://localhost/{filename.php} give it for all API.
+                    
+                    Task 1 : You're tasked with creating an API endpoint to add a new magical creature to a database. Your goal is to design an intuitive interface that allows users to effortlessly create enchanting beings. Your API should expect a JSON request body containing the name, species, and description of the creature. Additionally, you'll implement this endpoint using PHP and use PDO
+                    to ensure smooth integration. Furthermore, ensure connectivity to a PostgreSQL database hosted on a Docker server, ensuring data security and reliability.
+                    
+                    Add require_once realpath(__DIR__ . "/vendor/autoload.php");
+                    use $_ENV
+                    </p>
+            </div>
+
+
+            </div>
+            <div id="card2"  class="content-card" data-card-id=2>
+                
+                <div class="language-option-div">
+                    <div class="btn-div">
+                        <button class="language-btn">PHP</button>
+                        <span class="arrow-down material-symbols-outlined">
                             arrow_drop_down
                             </span>
                     </div>
@@ -95,20 +157,35 @@
                         <div class="language-options">
                             <p>Java</p>
                             <p>Python</p>
-                            <p>Php</p>
-                            <p>Javascript</p>
+                            <p>PHP</p>
+                            <p>JavaScript</p>
                         </div>
                 </div>
-                <h1 class="card-title">Task 2. Read Information About a Magical Creature</h1>  
-                <p>Your task is to devise an API endpoint that allows you to retrieve detailed information about a particular magical creature from the database. This endpoint should expect a unique identifier, {creature_id}, as part of the URL path to identify the creature of interest. Implement this endpoint using <span class="language">Python</span> to ensure efficient data retrieval. Additionally, ensure seamless connectivity to a PostgreSQL database hosted on a Docker server to provide reliable access to creature information.</p>  
+                <h1 class="card-title">2. Unveiling Magical Creatures</h1>  
+                <p class="card-content-story">
+                    Meanwhile, in the depths of the Forbidden Forest, Harry Potter set out to uncover the mysteries of the magical creatures stored in the database. With an API endpoint at his disposal, he could retrieve detailed information about any creature using its unique identifier. Through seamless connectivity to the database, Harry navigated through the realm of creatures, unraveling their secrets one by one.
+                </p>
+                <div class="card-content-prompt">
+                    <div class="prompt-copy-div">
+                        <p class="prompt">Prompt</p>
+                        <span data-copy-icon-id=2 onclick="copy(2); changeText(2);" class="copy-icon material-symbols-outlined">
+                            content_copy
+                        </span>
+                        <span class="copied-text hidden">copied!</span>
+                    </div>
+                    <p class="card-content-prompt-text" data-copy-id=2 data-prompt-id="2">
+                        Your task is to devise an API endpoint that allows you to retrieve detailed information about a particular magical creature from the database. This endpoint should expect a unique identifier, {creature_id}, as part of the URL path to identify the creature of interest. Implement this endpoint using PHP to ensure efficient data retrieval. Additionally, ensure seamless connectivity to a PostgreSQL database hosted on a Docker server to provide reliable access to creature information.
+
+                    </p>
+                </div>  
                
             </div>
-            <div id="card3" class="content-card ">
-                  <p></p>
+            <div id="card3" class="content-card " data-card-id=3>
+                  
                   <div class="language-option-div">
                     <div class="btn-div">
-                        <button class="language-btn">Python </button>
-                        <span class="material-symbols-outlined">
+                        <button class="language-btn">PHP</button>
+                        <span class="arrow-down material-symbols-outlined">
                             arrow_drop_down
                             </span>
                     </div>
@@ -116,22 +193,35 @@
                         <div class="language-options">
                             <p>Java</p>
                             <p>Python</p>
-                            <p>Php</p>
-                            <p>Javascript</p>
+                            <p>PHP</p>
+                            <p>JavaScript</p>
                         </div>
                 </div>
-                <h1 class="card-title">Task 3. Update a Magical Creature's Information</h1>  
-                <p>
+                <h1 class="card-title">3. Updating Enchantments</h1>  
+                <p class="card-content-story">
                     Your mission is to construct an API endpoint that empowers you to update the description of a specific magical creature stored in the database. This endpoint should expect a JSON body containing the new description, allowing you to modify the creature's information. Implement this endpoint using <span class="language">Python</span> to ensure smooth integration and efficient data handling. Moreover, ensure seamless connectivity with a PostgreSQL database hosted on a Docker server to securely persist the updated information.
                 </p>  
+                <div class="card-content-prompt">
+                    <div class="prompt-copy-div">
+                        <p class="prompt">Prompt</p>
+                        <span data-copy-icon-id=3  onclick="copy(3); changeText(3)" class="copy-icon material-symbols-outlined">
+                            content_copy
+                            </span>
+                            <span class="copied-text hidden">copied!</span>
+                    </div>
+                    <p class="card-content-prompt-text" data-copy-id=3 data-prompt-id="3">
+                        Your task is to construct an API endpoint that empowers you to update the description of a specific magical creature stored in the database. This endpoint should expect a JSON body containing the new description, allowing you to modify the creature's information. Implement this endpoint using PHP to ensure smooth integration and efficient data handling. Moreover, ensure seamless connectivity with a PostgreSQL database hosted on a Docker server to securely persist the updated information.
+                    </p>
+
+                </div>
               
             </div>
-            <div id="card4" class="content-card ">
-                 <p></p>
+            <div id="card4" class="content-card " data-card-id=4>
+                 
                  <div class="language-option-div">
                     <div class="btn-div">
-                        <button class="language-btn">Python </button>
-                        <span class="material-symbols-outlined">
+                        <button class="language-btn">PHP</button>
+                        <span class="arrow-down material-symbols-outlined">
                             arrow_drop_down
                             </span>
                     </div>
@@ -139,23 +229,35 @@
                         <div class="language-options">
                             <p>Java</p>
                             <p>Python</p>
-                            <p>Php</p>
-                            <p>Javascript</p>
+                            <p>PHP</p>
+                            <p>JavaScript</p>
                         </div>
                 </div>
-                <h1 class="card-title">Task 4. Delete a Magical Creature from the Database</h1> 
+                <h1 class="card-title">4. Banishing Dark Creatures</h1> 
                 
-                <p>
-                    Your challenge is to engineer an API endpoint that allows you to delete a specific magical creature from the database based on its identifier. This endpoint should expect the unique identifier, {creature_id}, as part of the URL path to pinpoint the creature for deletion. Implement this endpoint using <span class="language">Python</span> to ensure secure and efficient removal of the creature. Additionally, ensure seamless connectivity with a PostgreSQL database hosted on a Docker server to facilitate the deletion process with confidence.
+                <p class="card-content-story">
+                    In the depths of the Chamber of Secrets, the task of deleting dark creatures fell upon the shoulders of Neville Longbottom. With his bravery and PHP expertise, Neville engineered an API endpoint to delete specific magical creatures based on their identifiers. Through seamless connectivity with the database, Neville banished the dark creatures from the depths of the database, ensuring Hogwarts remained safe and secure.
                 </p>
+                <div class="card-content-prompt">
+                    <div class="prompt-copy-div">
+                        <p class="prompt">Prompt</p>
+                        <span data-copy-icon-id=4  onclick="copy(4); changeText(4);" class="copy-icon material-symbols-outlined">
+                            content_copy
+                            </span>
+                            <span class="copied-text hidden">copied!</span>
+                    </div>
+                    <p class="card-content-prompt-text" data-copy-id=4 data-prompt-id="4">
+                        Your task is to engineer an API endpoint that allows you to delete a specific magical creature from the database based on its identifier. This endpoint should expect the unique identifier, {creature_id}, as part of the URL path to pinpoint the creature for deletion. Implement this endpoint using PHP to ensure secure and efficient removal of the creature. Additionally, ensure seamless connectivity with a PostgreSQL database hosted on a Docker server to facilitate the deletion process with confidence.
+                    </p>
+                </div>
               
             </div>
-            <div id="card5" class="content-card ">
-             <p></p>
+            <div id="card5" class="content-card " data-card-id=5>
+             
              <div class="language-option-div">
                 <div class="btn-div">
-                    <button class="language-btn">Python </button>
-                    <span class="material-symbols-outlined">
+                    <button class="language-btn">PHP</button>
+                    <span class=" arrow-down material-symbols-outlined">
                         arrow_drop_down
                         </span>
                 </div>
@@ -163,18 +265,80 @@
                     <div class="language-options">
                         <p>Java</p>
                         <p>Python</p>
-                        <p>Php</p>
-                        <p>Javascript</p>
+                        <p>PHP</p>
+                        <p>JavaScript</p>
                     </div>
             </div>
-            <h1 class="card-title">Task 5. List All Magical Creatures</h1>    
-            <p>
-                Your task is to develop an API endpoint that offers you a comprehensive list of all magical creatures currently residing in the database. Simply send a GET request to this endpoint to retrieve the enchanting beings. Implement this endpoint using <span class="language">Python</span> to ensure seamless integration and efficient data retrieval. Additionally, ensure seamless connectivity with a PostgreSQL database hosted on a Docker server to fetch and display all magical creatures with ease.
+            <h1 class="card-title">5. Cataloging Magical Beings</h1>    
+            <p class="card-content-story">
+                Meanwhile, Professor Dumbledore, with his wisdom and foresight, oversaw the development of an API endpoint to list all magical creatures within the database. The endpoint offered a comprehensive catalog of enchanting beings, their names, species, and descriptions. With seamless connectivity to the database, the magical beings of Hogwarts were showcased in all their glory.
             </p>
+            <div class="card-content-prompt">
+                <div class="prompt-copy-div">
+                    <p class="prompt">Prompt</p>
+                    <span data-copy-icon-id=5 onclick="copy(5); changeText(5);" class="copy-icon material-symbols-outlined">
+                        content_copy
+                        </span>
+                        <span class="copied-text hidden">copied!</span>
+                </div>
+                <p class="card-content-prompt-text" data-copy-id=5 data-prompt-id="5">
+                    You're tasked with building an enchanted ecosystem for a magical database at Hogwarts School of Witchcraft and Wizardry. Your mission is to construct a set of magical APIs that will allow users to interact with the database storing information about various magical creatures. The database is hosted on a secure Docker server, ensuring data security and reliability.
+
+Before we delve into creating the APIs, please ensure that you have access to the database credentials.Here are the credentials you'll need:
+
+Host=localhost
+Port=5432
+DatabaseName=hogwarts_db
+Username=postgres
+Password=root
+
+The table name is "creature".
+Please ensure to provide a cURL request with  http://localhost/{filename.php} give it for all API.
+
+Task: Your task is to develop an API endpoint that offers you a comprehensive list of all magical creatures currently residing in the database. Simply send a GET request to this endpoint to retrieve the enchanting beings name, species, and description of the creature. Implement this endpoint using PHP , use PDO and do not use laravel to ensure seamless integration and efficient data retrieval. Additionally, ensure seamless connectivity with a PostgreSQL database hosted on a Docker server to fetch and display all magical creatures with ease.
+                </p>
+            </div>
          
             </div>
+            <div id="card6" class="content-card " data-card-id=6>
+     
+                <div class="language-option-div">
+                   <div class="btn-div">
+                       <button class="language-btn">PHP</button>
+                       <span class=" arrow-down material-symbols-outlined">
+                           arrow_drop_down
+                           </span>
+                   </div>
+   
+                       <div class="language-options">
+                           <p>Java</p>
+                           <p>Python</p>
+                           <p>PHP</p>
+                           <p>JavaScript</p>
+                       </div>
+               </div>
+               <h1 class="card-title">6. Seeking Ancient Spells</h1>    
+               <p class="card-content-story">
+                In the Gryffindor common room, young wizards and witches sought the thrill of ancient spells. With an API endpoint, they could fetch random spells from the database, discovering their names and descriptions with each request. Through seamless integration and efficient data retrieval, the magical spells of Hogwarts were at their fingertips, ready to be unleashed upon the world.
+And so, with each task completed, the magical database at Hogwarts grew stronger, fostering a deeper connection to the enchanting world of witchcraft and wizardry. As the stars twinkled above the castle, the legacy of magic lived on, forever intertwined with the mystical realms of data and technology.
+               </p>
+               <div class="card-content-prompt">
+                <div class="prompt-copy-div">
+                    <p class="prompt">Prompt</p>
+                    <span data-copy-icon-id=6 onclick="copy(6); changeText(6);" class="copy-icon material-symbols-outlined">
+                        content_copy
+                        </span>
+                        <span class="copied-text hidden">copied!</span>
+                </div>
+                   <p class="card-content-prompt-text" data-copy-id=6  data-prompt-id="6">
+                    Your task is to design a GET request endpoint that fetches a random spell from the spell table in the database. This endpoint should return information about the spell such as its name, description. Implement this endpoint using PHP , use PDO and do not use laravel to ensure seamless integration and efficient data retrieval. Ensure connectivity to a PostgreSQL database hosted on a Docker server to provide reliable access to spell information.
+                   </p>
+               </div>
+            
+               </div>
 
         </div>
+    </div>
     </section>
     <script src="./js/script.js"></script>
     

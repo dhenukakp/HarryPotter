@@ -26,25 +26,58 @@
 <body>
 
 <!--AI Introduction  -->
+
+<div id="navbar">
+    <div>
+        <a href="../harryPotter/index.html" class="nav-link nav-link-ltr">Home</a>
+    </div>
+    <div class="parts">
+        <a href="#intro" class="nav-link nav-link-ltr">Overview</a>
+        <a href="#ai-workflow" class="nav-link nav-link-ltr">Workflow</a>
+        <a href="#buzzwords" class="nav-link nav-link-ltr">Buzzwords</a>
+        <a href="#ai-tools" class="nav-link nav-link-ltr">Tools</a>
+        <a href="#Requirement" class="nav-link nav-link-ltr">Model Installation</a>
+        <a href="#link-to-codelab" class="nav-link nav-link-ltr">Try Hands-on</a>
+    </div>
+</div>
+
 <div id="ai-introduction">
     <div id="intro">
         <div id="intro-details">
+            <h1>Overview</h1>
+            <p>This workshop will introduce you to the next generation of AI code 
+                generation tools and the offline capabilities of Large Language Models (LLMs). 
+                We'll provide a practical demonstration of how to use AI tools like Phind to 
+                streamline your development process, significantly reducing the time spent on 
+                coding and improving code quality. 
+            </p>
+            <p>Additionally, we'll explore the security
+                benefits of running LLMs offline with tools such as Ollama, ensuring that your
+                 data remains secure and private, even when working on sensitive projects. </p>
+        </div>
+        <!-- <div id="intro-details">
             <h1>Generative AI</h1>
             <p>Generative AI refers to AI systems that can create new content, ranging from text
                  and images to code and audio, by learning from vast amounts of data. These tools
                   are being rapidly adopted across various industries to accelerate development, 
                   improve content creation, and enhance productivity.
             </p>
-            <!-- <ul>
+            <ul>
                 <li><a class="active" href="#ai-tools">Tools we curated<i class="fa-solid fa-angles-right"></i></a></li>
-            </ul> -->
-        </div>
+            </ul>
+        </div> -->
         <div id="intro-image">
             <img src="./Images/ai-intro-bot.png" alt="Two Professional using ai bot">
         </div>
     </div>
 
-    <div id="trends-capabilities">
+    <div id="ai-workflow">
+        <h1>Workshop Workflow</h1>
+        <img class="workflow" src="./Images/workflow-removebg.png" alt="">
+    </div>
+
+
+    <!-- <div id="trends-capabilities">
         <div id="current-trends">
             <h2>Current Trends</h2>
             <p>The current trend in generative AI is moving towards multi-modal capabilities, 
@@ -64,10 +97,123 @@
                 sales, marketing, and software development, potentially adding trillions of dollars
                  in value to the global economy</p>
         </div>
-    </div>
+    </div> -->
     
 
+    <div id="buzzwords">
+        <h2 class="sub-heading">Buzzwords</h2>
+        <ol>
+            <li><span>Fine Tuning</span>
+                <p class="tool-intro-content">Mistral can be fine-tuned for specific applications, such as answering fact-based questions on complex documents with a focus on reducing hallucinations.</p>
+            </li>
+            <li><span>Hallucination</span>
+                <p class="tool-intro-content">The fine-tuning process aims to minimize hallucinations, which are incorrect or nonsensical outputs produced by the model.</p>
+            </li>
+            <li><span>RAG</span>
+                <p class="tool-intro-content">Mistral is part of the dRAGon model series, which are trained with RAG-instruct.</p>
+            </li>
+            <li><span>Quantization</span>
+                <p class="tool-intro-content">Quantization refers to a set of techniques that enable running models on resource-constrained platforms. 
+                    Higher quantization 'bit counts' (4 bits or more) generally preserve more quality, whereas lower levels compress the model further, which can lead to a significant loss in quality.Choose a quantization level that aligns with your hardware's capabilities and satisfies the performance needs of your task. If you're unsure which option to select, consider experimenting with a few different ones and perform your own evaluation.
+                    <div class="table">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr class="comparison-table-row">
+                                    <th class="tools">Quant method</th>
+                                    <th class="tools">Bits</th>
+                                    <th class="tools">Use case</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Q2_K</td>
+                                    <td>2</td>
+                                    <td>smallest, significant quality loss - not
+                                        recommended for most purposes</td>
+                                </tr>
+                                <tr>
+                                    <td>Q3_K_S</td>
+                                    <td>3</td>
+                                    <td>very small, high quality loss
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Q3_K_M</td>
+                                    <td>3</td>
+                                    <td>very small, high quality loss
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Q3_K_L</td>
+                                    <td>3</td>
+                                    <td>small, substantial quality loss
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Q4_0</td>
+                                    <td>4</td>
+                                    <td>legacy; small, very high quality loss-
+                                        prefer using Q3_K_M</td>
+                                </tr>
+                                <tr>
+                                    <td>Q4_K_S</td>
+                                    <td>4</td>
+                                    <td>small, greater quality loss
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Q4_K_M</td>
+                                    <td>4</td>
+                                    <td>medium, balanced quality -
+                                        recommended</td>
+                                </tr>
+                                <tr>
+                                    <td>Q5_0</td>
+                                    <td>5</td>
+                                    <td>legacy; medium, balanced quality -
+                                        prefer using Q4_K_M</td>
+                                </tr>
+                                <tr>
+                                    <td>Q5_K_S</td>
+                                    <td>5</td>
+                                    <td>large, low quality loss-recommended
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Q5_K_M</td>
+                                    <td>5</td>
+                                    <td>large, very low quality loss-
+                                        recommended</td>
+                                </tr>
+                                <tr>
+                                    <td>Q6_K</td>
+                                    <td>6</td>
+                                    <td>very large, extremely low quality loss
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Q8_0</td>
+                                    <td>8</td>
+                                    <td>very large, extremely low quality loss-
+                                        not recommended</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
+                </p>
+            </li>
+            <li><span>GGUF</span>
+                <p class="tool-intro-content">Mistral uses the GGUF format for its model files, which are available in various quantization levels and sizes.</p>
+            </li>
+            <li><span>Type of Models</span>
+                <p class="tool-intro-content">Mistral is a generative text model that has been fine-tuned using various conversation datasets.</p>
+            </li>
+            <li><span>Parameters</span>
+                <p class="tool-intro-content">Mistral has a large number of parameters, which contributes to its ability to perform well on a wide range of NLP tasks.</p>
+            </li>
+        </ol>
+    </div>
 
     <div id="ai-tools">
         <div id="ai-title">
@@ -112,9 +258,33 @@
 
     </div>
 
+    <div id="Requirement">
+        <h2 class="requirement-heading">Installing AI Tools: A Step-by-Step Guide</h2>
+        <h3>Mistral</h3>
+        <p>To install Mistral to a local system using Ollama and the Continuum extension, follow these steps:</p>
+        
+        <h4>Step 1</h4>
+        <p>Instructions to setup Ollama in ubuntu:</p>
+        <ol>
+            <li><code>sudo apt-get install curl</code></li>
+            <li><code>curl https://ollama.ai/install.sh | sh</code></li>
+            <li><code>ollama run mistral</code></li>
+        </ol>
+
+        <h4>Step 2</h4>
+        <p>Add this extension to Visual Studio code after installing Ollama in system:</p>
+            <code>ext install Continue.continue</code>
+
+        <h3>Phind</h3>
+        <p>Launch Visual Studio Code Quick Open (Ctrl+P), paste the following command, and press enter.</p>
+
+        <code>ext install phind.phind</code>
+    </div>
+
     <div id="link-to-codelab">
-        <ul>
-            <li><a class="active" href="../harryPotter/codelabs.html">Dive into Workshop<i class="fa-solid fa-caret-right" style="color: #ffffff;"></i></a></li>
+        <h2>Now you are all ready to explore the powerful AI tools</h2>
+        <ul class="codelab">
+            <li ><a class="active" href="../harryPotter/codelabs.html">Dive into Workshop<i class="fa-solid fa-caret-right" style="color: #ffffff;"></i></a></li>
         </ul>
     </div>
     
